@@ -15,7 +15,7 @@ namespace AccidentReport.Web_Forms
         {
             string connetionString;
             SqlConnection cnn;
-            connetionString = @"Data Source=DILHAN;Initial Catalog=test;Integrated Security=True";
+            connetionString = @"Data Source=(LocalDB)\MSSQLLocalDB;Initial Catalog=loginPage;Integrated Security=True";
             cnn = new SqlConnection(connetionString);
             cnn.Open();
             MessageBox.Show("Connection Open  !");

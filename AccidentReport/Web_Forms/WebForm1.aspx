@@ -34,6 +34,42 @@
       <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
     </ul>
   </div>
+
+
 </nav>
+
+<!--Google Map-->
+    <div>
+
+
+<h1>My First Google Map</h1>
+
+<div id="googleMap" style="width:100%;height:400px;"></div>
+
+<script>
+    function myMap() {
+        var mapProp =
+        {
+            center: new google.maps.LatLng(6.821095, 80.040144),
+            zoom: 18,
+        };
+        var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+
+        var marker = new google.maps.Marker({ position: { lat: 6.824577, lng: 80.037010 } });
+
+        marker.setMap(map);
+    }
+//second marker
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAl60di2F93214_m8UN01Iq5nDDsAigBjc&callback=myMap"></script>
+
+
+
+
+
+    </div>
+
+
 </body>
 </html>
