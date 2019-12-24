@@ -13,6 +13,35 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
+    <style type="text/css">
+        html, body {
+            height: 100%;
+            margin: 0px;
+            padding: 0px
+        }
+        #canvasMap {
+            height: 500px;
+            width: 70%;
+            margin: 0px;
+            padding: 0px
+        }
+
+    </style> 
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>  
+    <script type="text/javascript">  
+        var map;
+        function LoadGoogleMAP() {
+            var SetmapOptions = {
+                zoom: 10,
+                center: new google.maps.LatLng(6.820929, 80.039777)
+            };
+            map = new google.maps.Map(document.getElementById('canvasMap'),
+                SetmapOptions);
+        }
+
+        google.maps.event.addDomListener(window, 'load', LoadGoogleMAP);
+
+    </script>  
 </head>
 <body>
     <form id="form1" runat="server">
@@ -37,36 +66,5 @@
 
 
 </nav>
-
-<!--Google Map-->
-    <div>
-
-
-<h1>My First Google Map</h1>
-
-<div id="googleMap" style="width:60%;height:500px;"></div>
-
-<script>
-    function myMap() {
-        var mapProp =
-        {
-            center: new google.maps.LatLng(6.821095, 80.040144),
-            zoom: 18,
-        };
-        var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
-
-        var marker = new google.maps.Marker({ position: { lat: 6.824577, lng: 80.037010 } });
-
-        marker.setMap(map);
-    }
-//second marker
-</script>
-
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAl60di2F93214_m8UN01Iq5nDDsAigBjc&callback=myMap"></script>
-
-</div>
-
-<!-- End of the Google map -->
-
 </body>
 </html>
