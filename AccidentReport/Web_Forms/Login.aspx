@@ -10,7 +10,7 @@
     <form id="form1" runat="server">
         <div>
         </div>
-        <asp:Panel ID="Panel1" runat="server"  BackColor="#003380" ForeColor="#3366FF" Height="100%" Width="80%">
+        <asp:Panel ID="Panel1" runat="server"  BackColor="#FF3300" ForeColor="#3366FF" Width="100%" Height="246px">
         </asp:Panel>
     </form>
 </body>

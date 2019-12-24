@@ -13,13 +13,15 @@ namespace AccidentReport.Web_Forms
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            /**
             string connetionString;
             SqlConnection cnn;
-            connetionString = @"Data Source=(LocalDB)\MSSQLLocalDB;Initial Catalog=loginPage;Integrated Security=True";
+            connetionString = @"Data Source=UNKNOWN\MYSQL;Initial Catalog=WebApplication;Integrated Security=True";
             cnn = new SqlConnection(connetionString);
             cnn.Open();
             MessageBox.Show("Connection Open  !");
             cnn.Close();
+            **/
 
 
         }

@@ -19,20 +19,27 @@
             margin: 0px;
             padding: 0px
         }
+
         #canvasMap {
             height: 500px;
-            width: 70%;
+            width: 104%;
             margin: 0px;
             padding: 0px
         }
 
+        .box {
+            float: right;
+            width: 70%;
+            padding: 50px;
+            margin-left: 191px;
+        }
     </style> 
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>  
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAHH5jw3V1gP-xbvOqj6mBo1tH7C5QbWzE&callback=myMap"></script>  
     <script type="text/javascript">  
         var map;
         function LoadGoogleMAP() {
             var SetmapOptions = {
-                zoom: 10,
+                zoom: 16,
                 center: new google.maps.LatLng(6.820929, 80.039777)
             };
             map = new google.maps.Map(document.getElementById('canvasMap'),
@@ -63,8 +70,9 @@
       <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
     </ul>
   </div>
-
-
 </nav>
+    <div class="box">
+        <div id="canvasMap"> </div>
+    </div>
 </body>
 </html>
