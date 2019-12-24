@@ -44,7 +44,7 @@
 
 <h1>My First Google Map</h1>
 
-<div id="googleMap" style="width:100%;height:400px;"></div>
+<div id="googleMap" style="width:60%;height:500px;"></div>
 
 <script>
     function myMap() {
@@ -64,12 +64,9 @@
 
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAl60di2F93214_m8UN01Iq5nDDsAigBjc&callback=myMap"></script>
 
+</div>
 
-
-
-
-    </div>
-
+<!-- End of the Google map -->
 
 </body>
 </html>
