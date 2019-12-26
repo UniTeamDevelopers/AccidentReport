@@ -123,8 +123,14 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Images\calendar-solid.png" />
+    <Content Include="Images\facebook.png" />
+    <Content Include="Images\instagram.png" />
+    <Content Include="Images\twitter.png" />
+    <Content Include="Images\youtube.png" />
     <Content Include="Web_Forms\Login.aspx" />
     <Content Include="Web_Forms\WebForm1.aspx" />
+    <Content Include="Web_Forms\SignUp.aspx" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -222,6 +228,13 @@
     </Compile>
     <Compile Include="Web_Forms\WebForm1.aspx.designer.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web_Forms\SignUp.aspx.cs">
+      <DependentUpon>SignUp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web_Forms\SignUp.aspx.designer.cs">
+      <DependentUpon>SignUp.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
