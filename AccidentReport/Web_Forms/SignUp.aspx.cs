@@ -28,7 +28,7 @@ namespace AccidentReport.Web_Forms
 
             try
             {
-                String sql = "insert into driver values('"+ txtNIC.Text + "','"+ txtFName.Text+ "','"+ txtLName.Text+"','"+ encryptAndDecrypt.Encrypt(txtPassword.Text)+ "','"+ Int32.Parse(mobileNumber.Text) + "','"+ selectGender.SelectedItem.ToString() + "','"+ txtLicence .Text+ "','"+ txtBirthday .Text+ "','"+ txtEmail .Text+ "') ";
+                String sql = "insert into driver (driverNic,firstName,lastName,driverPassword,mobileNumber,gender,licenceNumber,dob,eMail) values('"+ txtNIC.Text + "','"+ txtFName.Text+ "','"+ txtLName.Text+"','"+ encryptAndDecrypt.Encrypt(txtPassword.Text)+ "','"+ Int32.Parse(mobileNumber.Text) + "','"+ selectGender.SelectedItem.ToString() + "','"+ txtLicence .Text+ "','"+ txtBirthday .Text+ "','"+ txtEmail .Text+ "') ";
                 SqlCommand cmd = new SqlCommand(sql,con);
             }catch(Exception ex)
             {

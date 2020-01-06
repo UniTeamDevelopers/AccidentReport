@@ -31,6 +31,9 @@
             padding: 50px;
             margin-left: 191px;
         }
+        .auto-style1 {
+            width: 159px;
+        }
     </style> 
     <!-----------------------Google Map---------------------->
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAHH5jw3V1gP-xbvOqj6mBo1tH7C5QbWzE&callback=myMap"></script>  
@@ -77,16 +80,128 @@
             <br />
             <br />
             <br />
+            <br /> 
+
+         
+                    <label for="Insert Data" class="auto-style1" style="font-size: 20px; background-color: #FFFFFF"><b style="font-size: 15px; background-color: #99CCFF">Insert Data</b></label>
+            <br />
+                    <label for="Section 1"><b>Section 1</b></label>
+            <br />             
+                <asp:Label ID="Label1" runat="server" Text="Select Province"></asp:Label>
+            <asp:DropDownList ID="DropDownList1" runat="server">
+                <asp:ListItem>Central</asp:ListItem>
+                <asp:ListItem>Eastern</asp:ListItem>
+                <asp:ListItem>North Central</asp:ListItem>
+                <asp:ListItem>Northern</asp:ListItem>
+                <asp:ListItem>North Western</asp:ListItem>
+                <asp:ListItem>Sabaragamuwa</asp:ListItem>
+                <asp:ListItem>Southern</asp:ListItem>
+                <asp:ListItem>Uva</asp:ListItem>
+                <asp:ListItem>Western</asp:ListItem>
+            </asp:DropDownList>
+            <br />
+            <br />
+            <asp:Label ID="Label2" runat="server" Text="Select Distract"></asp:Label>
+            <asp:DropDownList ID="DropDownList2" runat="server">
+                <asp:ListItem>Select</asp:ListItem>
+                <asp:ListItem>Ampara</asp:ListItem>
+                <asp:ListItem>Anuradhapura</asp:ListItem>
+                <asp:ListItem>Badulla</asp:ListItem>
+                <asp:ListItem>Batticola</asp:ListItem>
+                <asp:ListItem>Colombo</asp:ListItem>
+                <asp:ListItem>Galle</asp:ListItem>
+                <asp:ListItem>Gampaha</asp:ListItem>
+                <asp:ListItem>Hambanthota</asp:ListItem>
+                <asp:ListItem>Jaffna</asp:ListItem>
+                <asp:ListItem>Kalutara</asp:ListItem>
+                <asp:ListItem>Kandy</asp:ListItem>
+                <asp:ListItem>Kegalle</asp:ListItem>
+                <asp:ListItem>Kilinochchi</asp:ListItem>
+                <asp:ListItem>Kurunegala</asp:ListItem>
+                <asp:ListItem>Mannar</asp:ListItem>
+                <asp:ListItem>Matale</asp:ListItem>
+                <asp:ListItem>Matara</asp:ListItem>
+                <asp:ListItem>Moneragala</asp:ListItem>
+                <asp:ListItem>Mullaitivu</asp:ListItem>
+                <asp:ListItem>Nuwara Eliya	</asp:ListItem>
+                <asp:ListItem>Polonnaruwa</asp:ListItem>
+                <asp:ListItem>Puttalam</asp:ListItem>
+                <asp:ListItem>Ratnapura</asp:ListItem>
+                <asp:ListItem>Trincomalee</asp:ListItem>
+                <asp:ListItem>Vavuniya</asp:ListItem>
+            </asp:DropDownList>
+           
+
+           
+            <br />
+            <br />
+            <centre>
+            <asp:Label ID="Label3" runat="server" Text="Is That Your Correct Location"></asp:Label>
+            <asp:Button ID="Button1" runat="server" Text="Yes" />
+            <asp:Button ID="Button2" runat="server" Text="No" />
+            <br />
+            <br />
+            </centre>
+            
+            <br />
+            <asp:Label ID="Label4" runat="server" Text="Date"></asp:Label>
+            <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+            <br />
+            <br />
+            <asp:Label ID="Label5" runat="server" Text="Time"></asp:Label>
+            <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+            <asp:RadioButtonList ID="RadioButtonList1" runat="server">
+                <asp:ListItem>am</asp:ListItem>
+                <asp:ListItem>pm</asp:ListItem>
+            </asp:RadioButtonList>
+            <br />
+            <asp:Label ID="Label6" runat="server" Text="Section 2"></asp:Label>
+            <br />
+            <br />
+            <asp:Label ID="Label7" runat="server" Text="Vehicle Driven By You"></asp:Label>
+            <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
+            <br />
+            <br />
+            <br />
+            <asp:Label ID="Label8" runat="server" Text="Crash Type"></asp:Label>
+            <asp:DropDownList ID="DropDownList3" runat="server">
+            </asp:DropDownList>
+            <br />
+           
+
+           
+            <br />
+            <asp:Label ID="Label9" runat="server" Text="Add Photos"></asp:Label>
+            <asp:FileUpload ID="FileUpload1" runat="server" />
+            <br />
+            <asp:Label ID="Label10" runat="server" Text="Add Videos"></asp:Label>
+            <asp:FileUpload ID="FileUpload2" runat="server" />
+            <br />
+            <asp:Label ID="Label11" runat="server" Text="3rd Party Damage"></asp:Label>
+            <asp:RadioButtonList ID="RadioButtonList2" runat="server">
+                <asp:ListItem>Yes</asp:ListItem>
+                <asp:ListItem>No</asp:ListItem>
+            </asp:RadioButtonList>
+            <br />
+            <asp:Label ID="Label12" runat="server" Text="Are You Injured"></asp:Label>
+            <asp:RadioButtonList ID="RadioButtonList3" runat="server">
+                <asp:ListItem>Yes</asp:ListItem>
+                <asp:ListItem>No</asp:ListItem>
+            </asp:RadioButtonList>
+            <br />
             <br />
             <table style="width:100%">
             <tr>
-             <th><asp:Button ID="Button2" runat="server" Height="94px" Text="New Report" Width="197px" />   </th>
-             <th><asp:Button ID="Button1" runat="server" Height="92px" Text="Update REport" Width="185px" />  </th> 
-             <th><asp:Button ID="Button4" runat="server" Height="94px" Text="Delete Report" Width="193px" /> </th>
-             <th><asp:Button ID="Button3" runat="server" Height="90px" Text="Own Vehicle" Width="192px" />  </th> 
+             <th><asp:Button ID="Button3" runat="server" Height="42px" Text="Submit" Width="164px" />   </th>
+             <th><asp:Button ID="Button4" runat="server" Height="43px" Text="Update" Width="143px" />  </th> 
+             <th><asp:Button ID="Button5" runat="server" Height="39px" Text="Delete " Width="160px" /> </th>            
             </tr>
                 </table>
       
+        </div>
+           
+
+           
         </div>
 
     

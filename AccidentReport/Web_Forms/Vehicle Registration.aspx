@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Driver 1.aspx.cs" Inherits="AccidentReport.Web_Forms.WebForm4" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Vehicle Registration.aspx.cs" Inherits="AccidentReport.Web_Forms.Vehicle_Registration" %>
 
 <!DOCTYPE html>
 
@@ -80,10 +80,9 @@
             <br />
             <table style="width:100%">
             <tr>
-             <th><asp:Button ID="Button2" runat="server" Height="94px" Text="New Report" Width="197px" />   </th>
-             <th><asp:Button ID="Button1" runat="server" Height="92px" Text="Update REport" Width="185px" />  </th> 
-             <th><asp:Button ID="Button4" runat="server" Height="94px" Text="Delete Report" Width="193px" /> </th>
-             <th><asp:Button ID="Button3" runat="server" Height="90px" Text="Own Vehicle" Width="192px" />  </th> 
+             <th><asp:Button ID="Button2" runat="server" Height="42px" Text="Add Vehicle" Width="197px" />   </th>
+             <th><asp:Button ID="Button1" runat="server" Height="41px" Text="Edit Vehicle" Width="185px" />  </th> 
+             <th><asp:Button ID="Button4" runat="server" Height="43px" Text="Delete Report" Width="193px" /> </th>            
             </tr>
                 </table>
       
