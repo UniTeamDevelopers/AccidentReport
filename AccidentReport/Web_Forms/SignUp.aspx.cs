@@ -28,11 +28,13 @@ namespace AccidentReport.Web_Forms
 
             try
             {
-                String sql = "insert into driver ";
+                String sql = "insert into driver values('"+ txtNIC.Text + "','"+ txtFName.Text+ "','"+ txtLName.Text+"','"+ encryptAndDecrypt.Encrypt(txtPassword.Text)+ "','"+ Int32.Parse(mobileNumber.Text) + "','"+ selectGender.SelectedItem.ToString() + "','"+ txtLicence .Text+ "','"+ txtBirthday .Text+ "','"+ txtEmail .Text+ "') ";
+                SqlCommand cmd = new SqlCommand(sql,con);
             }catch(Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
+            con.Close();
         }
     }
 }
