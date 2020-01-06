@@ -7,13 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace AccidentReport.Web_Forms
-{
-
-
-    public partial class WebForm2
-    {
-
+namespace AccidentReport.Web_Forms {
+    
+    
+    public partial class WebForm2 {
+        
         /// <summary>
         /// form1 control.
         /// </summary>
@@ -22,7 +20,7 @@ namespace AccidentReport.Web_Forms
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
-
+        
         /// <summary>
         /// Panel1 control.
         /// </summary>
@@ -31,7 +29,7 @@ namespace AccidentReport.Web_Forms
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Panel Panel1;
-
+        
         /// <summary>
         /// TextBox1 control.
         /// </summary>
@@ -40,7 +38,7 @@ namespace AccidentReport.Web_Forms
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TextBox1;
-
+        
         /// <summary>
         /// TextBox6 control.
         /// </summary>
@@ -49,7 +47,7 @@ namespace AccidentReport.Web_Forms
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TextBox6;
-
+        
         /// <summary>
         /// TextBox8 control.
         /// </summary>
@@ -58,7 +56,7 @@ namespace AccidentReport.Web_Forms
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TextBox8;
-
+        
         /// <summary>
         /// FileUpload1 control.
         /// </summary>
@@ -67,25 +65,16 @@ namespace AccidentReport.Web_Forms
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.FileUpload FileUpload1;
-
+        
         /// <summary>
-        /// RadioButton1 control.
+        /// ListGender control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton RadioButton1;
-
-        /// <summary>
-        /// RadioButton2 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton RadioButton2;
-
+        protected global::System.Web.UI.WebControls.RadioButtonList ListGender;
+        
         /// <summary>
         /// TextBox2 control.
         /// </summary>
@@ -94,7 +83,7 @@ namespace AccidentReport.Web_Forms
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TextBox2;
-
+        
         /// <summary>
         /// TextBox3 control.
         /// </summary>
@@ -103,7 +92,7 @@ namespace AccidentReport.Web_Forms
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TextBox3;
-
+        
         /// <summary>
         /// TextBox4 control.
         /// </summary>
@@ -112,7 +101,7 @@ namespace AccidentReport.Web_Forms
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TextBox4;
-
+        
         /// <summary>
         /// Button1 control.
         /// </summary>

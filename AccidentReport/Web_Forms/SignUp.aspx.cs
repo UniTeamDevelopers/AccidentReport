@@ -4,7 +4,6 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-
 namespace AccidentReport.Web_Forms
 {
     public partial class WebForm2 : System.Web.UI.Page

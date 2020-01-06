@@ -1,147 +1,161 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="SignUp.aspx.cs" Inherits="AccidentReport.Web_Forms.WebForm2" %>
 
-<!DOCTYPE html>
 <html>
-<style>
-    body {
-        font-family: Arial, Helvetica, sans-serif;
-    }
-
-    * {
-        box-sizing: border-box
-    }
-
-    /* Full-width input fields */
-    input[type=text], input[type=password] {
-        width: 100%;
-        padding: 15px;
-        margin: 5px 0 22px 0;
-        display: inline-block;
-        border: none;
-        background: #f1f1f1;
-    }
-
-        input[type=text]:focus, input[type=password]:focus {
-            background-color: #ddd;
-            outline: none;
+<head>
+    <title></title>
+    <link rel="stylesheet" href="../Content/bootstrap.css" type="text/css" />
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
         }
 
-    hr {
-        border: 1px solid #f1f1f1;
-        margin-bottom: 25px;
-    }
-
-    /* Set a style for all buttons */
-    button {
-        background-color: #4CAF50;
-        color: white;
-        padding: 14px 20px;
-        margin: 8px 0;
-        border: none;
-        cursor: pointer;
-        width: 100%;
-        opacity: 0.9;
-    }
-
-        button:hover {
-            opacity: 1;
+        * {
+            box-sizing: border-box
         }
 
-    /* Extra styles for the cancel button */
-    .cancelbtn {
-        padding: 14px 20px;
-        background-color: #f44336;
-    }
+        /* Full-width input fields */
+        input[type=text], input[type=password],.input {
+            border-style: none;
+            border-color: inherit;
+            border-width: medium;
+width: 83%;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            display: inline-block;
+            background: #f1f1f1;
+        }
 
-    /* Float cancel and signup buttons and add an equal width */
-    .cancelbtn, .signupbtn {
-        float: left;
-        width: 50%;
-    }
+            input[type=text]:focus, input[type=password]:focus,.input:focus {
+                background-color: #ddd;
+                outline: none;
+            }
 
-    /* Add padding to container elements */
-    .container {
-        padding: 16px;
-    }
+        hr {
+            border: 1px solid #f1f1f1;
+            margin-bottom: 25px;
+        }
 
-    /* Clear floats */
-    .clearfix::after {
-        content: "";
-        clear: both;
-        display: table;
-    }
-
-    /* Change styles for cancel button and signup button on extra small screens */
-    @media screen and (max-width: 300px) {
-        .cancelbtn, .signupbtn {
+        /* Set a style for all buttons */
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
             width: 100%;
+            opacity: 0.9;
         }
-    }
 
-    .auto-style1 {
-        margin-left: 539px;
-    }
-    .auto-style2 {
-        width: 613px;
-    }
+            button:hover {
+                opacity: 1;
+            }
+
+        /* Extra styles for the cancel button */
+        .cancelbtn {
+            padding: 14px 20px;
+            background-color: #f44336;
+        }
+
+        /* Float cancel and signup buttons and add an equal width */
+        .cancelbtn, .signupbtn {
+            float: left;
+            width: 50%;
+        }
+
+        /* Add padding to container elements */
+        .container {
+            padding: 16px;
+        }
+
+        /* Clear floats */
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        /* Change styles for cancel button and signup button on extra small screens */
+        @media screen and (max-width: 300px) {
+            .cancelbtn, .signupbtn {
+                width: 100%;
+            }
+        }
+
+        .auto-style2 {
+            width: 613px;
+        }
+
+        .main-center {
+            margin-top: 30px;
+            margin: 0 auto;
+            max-width: 330px;
+            padding: 40px 40px;
+        }
     </style>
+</head>
 <body>
 
     <form id="form1" runat="server">
         <div class="container">
-            <h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sign Up</h1>
-            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Please fill in this form to create an account.</p>
-            <asp:Panel ID="Panel1" runat="server" CssClass="auto-style1" Width="646px">
+            <h1 style="text-align: center">Sign Up</h1>
+            <p style="text-align: center">Please fill in this form to create an account.</p>
+            <div class="form-group">
+                <asp:Panel ID="Panel1" runat="server" Width="646px">
                 <div class="auto-style2">
-                   
-                    
                     <label for="Name"><b>First Name</b></label>
                     <br />
-                    <asp:TextBox ID="TextBox1" runat="server" Width="510px"></asp:TextBox>                 
+                    <asp:TextBox ID="TextBox1" runat="server" Width="510px"></asp:TextBox>
                     <br />
-                    &nbsp;<label for="Last Name"><b>Last Name</b></label>
+                    <label for="Last Name"><b>Last Name</b></label>
                     <br />
                     <asp:TextBox ID="TextBox6" runat="server" Width="510px" ValidateRequestMode="Enabled"></asp:TextBox>
                     <br />
-                    &nbsp;<label for="Driver Password"><b>Driver Password</b></label>
+                    <label for="Driver Password"><b>Driver Password</b></label>
                     <br />
-                    <input id="Password1" class="auto-style4" type="password" style="width: 87%" />
+                    <input id="Password1" class="auto-style4" type="password"  />
                     <br />
-                    &nbsp;<label for="Mobile Number"><b>Mobile Number</b></label>
+                    <label for="Mobile Number"><b>Mobile Number</b></label>
                     <br />
                     <asp:TextBox ID="TextBox8" runat="server" Width="510px" ValidateRequestMode="Enabled"></asp:TextBox>
                     <br />
-                    &nbsp;<label for="Driver Picture"><b>Driver Picture</b></label>
+                    <label for="Driver Picture"><b>Driver Picture</b></label>
                     <br />
                     <asp:FileUpload ID="FileUpload1" runat="server" />
                     <br />
                     <br />
-                    &nbsp;<label for="Gender"><b>Gender</b></label>
-                    <br />
-                    <asp:RadioButton ID="RadioButton1" runat="server" Text="Male" />
-                    <asp:RadioButton ID="RadioButton2" runat="server" Text="Female" />
+                    <label for="Gender"><b>Gender</b></label>
                     <br />
                     <br />
-                     &nbsp;<label for="Licence Number"><b>Licence Number</b></label>
+                    <asp:RadioButtonList ID="ListGender" runat="server" Width="133px">
+                        <asp:ListItem Value="M">Male</asp:ListItem>
+                        <asp:ListItem Value="F">Female</asp:ListItem>
+                    </asp:RadioButtonList>
+                    <br />
+                    <br />
+                    <label for="Licence Number"><b>Licence Number</b></label>
                     <br />
                     <asp:TextBox ID="TextBox2" runat="server" Width="510px" ValidateRequestMode="Enabled"></asp:TextBox>
                     <br />
-                     &nbsp;<label for="Birthday"><b>Birthday</b></label>
+                    <label for="Birthday"><b>Birthday</b></label>
                     <br />
                     <asp:TextBox ID="TextBox3" runat="server" Width="510px" ValidateRequestMode="Enabled"></asp:TextBox>
                     <br />
-                     &nbsp;<label for="Email"><b>Email</b></label>
+                    <label for="Email"><b>Email</b></label>
                     <br />
                     <asp:TextBox ID="TextBox4" runat="server" Width="510px" ValidateRequestMode="Enabled"></asp:TextBox>
                     <br />
                     <br />
-                    <asp:Button ID="Button1" runat="server" BackColor="#6600FF" Font-Bold="True" Font-Size="Medium" Height="52px" Text="SignUp" Width="166px" />
+                    <asp:Button ID="Button1" runat="server" BackColor="#66FF66" Font-Bold="True" Font-Size="Medium" Height="51px" Text="SignUp" Width="166px" />
                     <br />
-                    &nbsp;<div class="clearfix">
+                    <div class="clearfix">
                     </div>
                 </div>
             </asp:Panel>
-            </form>
+            </div>
+            
+        </div>
+    </form>
 
 </body>
 </html>
