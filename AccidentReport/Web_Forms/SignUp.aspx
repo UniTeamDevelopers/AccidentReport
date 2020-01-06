@@ -14,18 +14,18 @@
         }
 
         /* Full-width input fields */
-        input[type=text], input[type=password],.input {
+        input[type=text], input[type=password], .input {
             border-style: none;
             border-color: inherit;
             border-width: medium;
-width: 83%;
+            width: 83%;
             padding: 15px;
             margin: 5px 0 22px 0;
             display: inline-block;
             background: #f1f1f1;
         }
 
-            input[type=text]:focus, input[type=password]:focus,.input:focus {
+            input[type=text]:focus, input[type=password]:focus, .input:focus {
                 background-color: #ddd;
                 outline: none;
             }
@@ -83,7 +83,7 @@ width: 83%;
         }
 
         .auto-style2 {
-            width: 613px;
+            width: 741px;
         }
 
         .main-center {
@@ -95,67 +95,71 @@ width: 83%;
     </style>
 </head>
 <body>
-
     <form id="form1" runat="server">
         <div class="container">
             <h1 style="text-align: center">Sign Up</h1>
             <p style="text-align: center">Please fill in this form to create an account.</p>
             <div class="form-group">
-                <asp:Panel ID="Panel1" runat="server" Width="646px">
-                <div class="auto-style2">
-                    <label for="Name"><b>First Name</b></label>
-                    <br />
-                    <asp:TextBox ID="TextBox1" runat="server" Width="510px"></asp:TextBox>
-                    <br />
-                    <label for="Last Name"><b>Last Name</b></label>
-                    <br />
-                    <asp:TextBox ID="TextBox6" runat="server" Width="510px" ValidateRequestMode="Enabled"></asp:TextBox>
-                    <br />
-                    <label for="Driver Password"><b>Driver Password</b></label>
-                    <br />
-                    <input id="Password1" class="auto-style4" type="password"  />
-                    <br />
-                    <label for="Mobile Number"><b>Mobile Number</b></label>
-                    <br />
-                    <asp:TextBox ID="TextBox8" runat="server" Width="510px" ValidateRequestMode="Enabled"></asp:TextBox>
-                    <br />
-                    <label for="Driver Picture"><b>Driver Picture</b></label>
-                    <br />
-                    <asp:FileUpload ID="FileUpload1" runat="server" />
-                    <br />
-                    <br />
-                    <label for="Gender"><b>Gender</b></label>
-                    <br />
-                    <br />
-                    <asp:RadioButtonList ID="ListGender" runat="server" Width="133px">
-                        <asp:ListItem Value="M">Male</asp:ListItem>
-                        <asp:ListItem Value="F">Female</asp:ListItem>
-                    </asp:RadioButtonList>
-                    <br />
-                    <br />
-                    <label for="Licence Number"><b>Licence Number</b></label>
-                    <br />
-                    <asp:TextBox ID="TextBox2" runat="server" Width="510px" ValidateRequestMode="Enabled"></asp:TextBox>
-                    <br />
-                    <label for="Birthday"><b>Birthday</b></label>
-                    <br />
-                    <asp:TextBox ID="TextBox3" runat="server" Width="510px" ValidateRequestMode="Enabled"></asp:TextBox>
-                    <br />
-                    <label for="Email"><b>Email</b></label>
-                    <br />
-                    <asp:TextBox ID="TextBox4" runat="server" Width="510px" ValidateRequestMode="Enabled"></asp:TextBox>
-                    <br />
-                    <br />
-                    <asp:Button ID="Button1" runat="server" BackColor="#66FF66" Font-Bold="True" Font-Size="Medium" Height="51px" Text="SignUp" Width="166px" />
-                    <br />
-                    <div class="clearfix">
+                <asp:Panel ID="Panel1" runat="server" Width="782px">
+                    <div class="auto-style2">
+                        <label for="nic"><b>NIC</b></label>
+                        <br />
+                        <asp:TextBox ID="txtNIC" runat="server" Width="510px"></asp:TextBox>
+                        <br />
+                        <label for="fName"><b>First Name</b></label>
+                        <br />
+                        <asp:TextBox ID="txtFName" runat="server" Width="510px"></asp:TextBox>
+                        <br />
+                        <label for="Last Name"><b>Last Name</b></label>
+                        <br />
+                        <asp:TextBox ID="txtLName" runat="server" Width="510px" ValidateRequestMode="Enabled"></asp:TextBox>
+                        <br />
+                        <label for="Birthday"><b>Birthday</b></label><br />
+                        <asp:TextBox ID="txtBirthday" CssClass="input" runat="server" TextMode="Date" Width="510px"></asp:TextBox>
+                        <br />
+                        <br />
+                        <label for="Mobile Number">
+                        <b>Mobile Number</b></label>
+                        <asp:RegularExpressionValidator ID="mobileNumber" runat="server" ControlToValidate="txtMobile" SetFocusOnError="true" ErrorMessage="RegularExpressionValidator" ValidationExpression="/[0-9]{10}/"></asp:RegularExpressionValidator>
+                        <br />
+                        <asp:TextBox ID="txtMobile" CssClass="input" runat="server" MaxLength="10" Width="510px" ValidateRequestMode="Enabled"></asp:TextBox>
+                        <br />
+                        <label for="Driver Picture">
+                            <b>Driver Picture</b></label>
+                        <br />
+                        <asp:FileUpload ID="FileUpload1" runat="server" />
+                        <br />
+                        <br />
+                        <label for="Gender">
+                            <b>Gender</b></label>
+                        <br />
+                        <br />
+                        <asp:RadioButtonList ID="selectGender" runat="server" Width="133px">
+                            <asp:ListItem Value="M">Male</asp:ListItem>
+                            <asp:ListItem Value="F">Female</asp:ListItem>
+                        </asp:RadioButtonList>
+                        <br />
+                        <br />
+                        <label for="Licence Number">
+                            <b>Licence Number</b></label>
+                        <br />
+                        <asp:TextBox ID="txtLicence" runat="server" ValidateRequestMode="Enabled" Width="510px"></asp:TextBox>
+                        <br />
+                        <label for="Email"><b>Email</b></label><br />
+                        <asp:TextBox ID="txtEmail" CssClass="input" TextMode="Email" runat="server" ValidateRequestMode="Enabled" Width="510px"></asp:TextBox>
+                        <br />
+                        <label for="Driver Password"><b>Driver Password</b></label><br />
+                        <asp:TextBox ID="txtPassword" TextMode="Password" runat="server" Width="510px" ValidateRequestMode="Enabled" ></asp:TextBox>
+                        <br />
+                        <br />
+                        <asp:Button ID="btnSubmit" runat="server" BackColor="#66FF66" Font-Bold="True" Font-Size="Medium" Height="51px" Text="SignUp" Width="166px" OnClick="btnSubmit_Click" />
+                        <br />
+                        <div class="clearfix">
+                        </div>
                     </div>
-                </div>
-            </asp:Panel>
+                </asp:Panel>
             </div>
-            
         </div>
     </form>
-
 </body>
 </html>
