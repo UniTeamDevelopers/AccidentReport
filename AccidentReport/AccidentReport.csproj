@@ -129,8 +129,10 @@
     <Content Include="Images\twitter.png" />
     <Content Include="Images\youtube.png" />
     <Content Include="Web_Forms\Login.aspx" />
-    <Content Include="Web_Forms\WebForm1.aspx" />
+    <Content Include="Web_Forms\Home.aspx" />
     <Content Include="Web_Forms\SignUp.aspx" />
+    <Content Include="Web_Forms\User_Profil.aspx" />
+    <Content Include="Web_Forms\Driver 1.aspx" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -222,12 +224,12 @@
     <Compile Include="Web_Forms\Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Web_Forms\WebForm1.aspx.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
+    <Compile Include="Web_Forms\Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Web_Forms\WebForm1.aspx.designer.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
+    <Compile Include="Web_Forms\Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
     </Compile>
     <Compile Include="Web_Forms\SignUp.aspx.cs">
       <DependentUpon>SignUp.aspx</DependentUpon>
@@ -235,6 +237,20 @@
     </Compile>
     <Compile Include="Web_Forms\SignUp.aspx.designer.cs">
       <DependentUpon>SignUp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web_Forms\User_Profil.aspx.cs">
+      <DependentUpon>User_Profil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web_Forms\User_Profil.aspx.designer.cs">
+      <DependentUpon>User_Profil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web_Forms\Driver 1.aspx.cs">
+      <DependentUpon>Driver 1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web_Forms\Driver 1.aspx.designer.cs">
+      <DependentUpon>Driver 1.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

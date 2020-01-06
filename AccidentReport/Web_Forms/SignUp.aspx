@@ -84,13 +84,7 @@
     .auto-style2 {
         width: 613px;
     }
-    .auto-style4 {
-        width: 89%;
-    }
-    .auto-style5 {
-        margin-top: 0px;
-    }
-</style>
+    </style>
 <body>
 
     <form id="form1" runat="server">
@@ -99,34 +93,47 @@
             <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Please fill in this form to create an account.</p>
             <asp:Panel ID="Panel1" runat="server" CssClass="auto-style1" Width="646px">
                 <div class="auto-style2">
-                    <label for="Name">
-                    <b>Name</b></label>
+                   
+                    
+                    <label for="Name"><b>First Name</b></label>
                     <br />
-                    <asp:TextBox ID="TextBox1" runat="server" Width="510px"></asp:TextBox>
+                    <asp:TextBox ID="TextBox1" runat="server" Width="510px"></asp:TextBox>                 
+                    <br />
+                    &nbsp;<label for="Last Name"><b>Last Name</b></label>
+                    <br />
+                    <asp:TextBox ID="TextBox6" runat="server" Width="510px" ValidateRequestMode="Enabled"></asp:TextBox>
+                    <br />
+                    &nbsp;<label for="Driver Password"><b>Driver Password</b></label>
+                    <br />
+                    <input id="Password1" class="auto-style4" type="password" style="width: 87%" />
+                    <br />
+                    &nbsp;<label for="Mobile Number"><b>Mobile Number</b></label>
+                    <br />
+                    <asp:TextBox ID="TextBox8" runat="server" Width="510px" ValidateRequestMode="Enabled"></asp:TextBox>
+                    <br />
+                    &nbsp;<label for="Driver Picture"><b>Driver Picture</b></label>
+                    <br />
+                    <asp:FileUpload ID="FileUpload1" runat="server" />
                     <br />
                     <br />
-                    &nbsp;<label for="email"><b>Email</b></label>
+                    &nbsp;<label for="Gender"><b>Gender</b></label>
+                    <br />
+                    <asp:RadioButton ID="RadioButton1" runat="server" Text="Male" />
+                    <asp:RadioButton ID="RadioButton2" runat="server" Text="Female" />
+                    <br />
+                    <br />
+                     &nbsp;<label for="Licence Number"><b>Licence Number</b></label>
                     <br />
                     <asp:TextBox ID="TextBox2" runat="server" Width="510px" ValidateRequestMode="Enabled"></asp:TextBox>
                     <br />
-                    &nbsp;<label for="Phone"><b>Phone</b></label>
+                     &nbsp;<label for="Birthday"><b>Birthday</b></label>
                     <br />
-                    <asp:TextBox ID="TextBox3" runat="server" Width="510px"></asp:TextBox>
+                    <asp:TextBox ID="TextBox3" runat="server" Width="510px" ValidateRequestMode="Enabled"></asp:TextBox>
                     <br />
-                    &nbsp;<label for="NIC Number"><b>NIC Number</b></label>
+                     &nbsp;<label for="Email"><b>Email</b></label>
                     <br />
-                    <asp:TextBox ID="TextBox4" runat="server" Height="30px" Width="510px"></asp:TextBox>
+                    <asp:TextBox ID="TextBox4" runat="server" Width="510px" ValidateRequestMode="Enabled"></asp:TextBox>
                     <br />
-                    &nbsp;<label for="Birthday"><b>Birthday</b></label>
-                    <br />
-                    <asp:TextBox ID="TextBox5" runat="server" Width="510px"></asp:TextBox>
-                    <asp:ImageButton ID="ImageButton1" runat="server" CssClass="auto-style5" Height="38px" ImageUrl="~/Images/calendar-solid.png" Width="28px" />
-                    <br />
-                    <br />
-                    &nbsp;<label for="psw"><b>Password</b></label>
-                    <br />
-                    <input id="Password1" class="auto-style4" type="password" />
-                    &nbsp;<br />
                     <br />
                     <asp:Button ID="Button1" runat="server" BackColor="#6600FF" Font-Bold="True" Font-Size="Medium" Height="52px" Text="SignUp" Width="166px" />
                     <br />
