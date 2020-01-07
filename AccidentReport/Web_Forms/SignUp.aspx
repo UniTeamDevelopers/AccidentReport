@@ -120,7 +120,7 @@
                         <br />
                         <label for="Mobile Number">
                         <b>Mobile Number</b></label>
-                        <asp:RegularExpressionValidator ID="mobileNumber" runat="server" ControlToValidate="txtMobile" SetFocusOnError="true" ErrorMessage="RegularExpressionValidator" ValidationExpression="/[0-9]{10}/"></asp:RegularExpressionValidator>
+                        <!--<asp:RegularExpressionValidator ID="mobileNumber" runat="server" ControlToValidate="txtMobile" SetFocusOnError="true" ErrorMessage="RegularExpressionValidator" ValidationExpression="/[0-9]{10}/"></asp:RegularExpressionValidator>-->
                         <br />
                         <asp:TextBox ID="txtMobile" CssClass="input" runat="server" MaxLength="10" Width="510px" ValidateRequestMode="Enabled"></asp:TextBox>
                         <br />

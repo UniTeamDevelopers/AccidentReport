@@ -128,6 +128,7 @@
     <Content Include="Images\instagram.png" />
     <Content Include="Images\twitter.png" />
     <Content Include="Images\youtube.png" />
+    <Content Include="Web_Forms\Driver 2.aspx" />
     <Content Include="Web_Forms\Login.aspx" />
     <Content Include="Web_Forms\Home.aspx" />
     <Content Include="Web_Forms\SignUp.aspx" />
@@ -216,6 +217,13 @@
     </Compile>
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Web_Forms\Driver 2.aspx.cs">
+      <DependentUpon>Driver 2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web_Forms\Driver 2.aspx.designer.cs">
+      <DependentUpon>Driver 2.aspx</DependentUpon>
     </Compile>
     <Compile Include="Web_Forms\encryptAndDecrypt.cs" />
     <Compile Include="Web_Forms\Login.aspx.cs">

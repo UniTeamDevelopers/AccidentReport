@@ -26,7 +26,7 @@
         }
 
         .box {
-            float: right;
+            float: left;
             width: 70%;
             padding: 50px;
             margin-left: 191px;

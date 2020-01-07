@@ -25,6 +25,7 @@ namespace AccidentReport.Web_Forms
             connectionString = @"Data Source=UNKNOWN\MYSQL;Initial Catalog=web;Integrated Security=True";
             SqlConnection con = new SqlConnection(connectionString);
             con.Open();
+            MessageBox.Show("connection ok");
 
             try
             {
@@ -32,7 +33,7 @@ namespace AccidentReport.Web_Forms
                 SqlCommand cmd = new SqlCommand(sql,con);
             }catch(Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show(ex.Message,ex.Source);
             }
             con.Close();
         }
