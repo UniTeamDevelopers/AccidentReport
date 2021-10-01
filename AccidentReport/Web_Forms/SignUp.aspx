@@ -150,6 +150,7 @@
                         <br />
                         <label for="Driver Password"><b>Driver Password</b></label><br />
                         <asp:TextBox ID="txtPassword" TextMode="Password" runat="server" Width="510px" ValidateRequestMode="Enabled" ></asp:TextBox>
+                        <!-- Need to add the backend for password verification and user confirmation -->
                         <br />
                         <br />
                         <asp:Button ID="btnSubmit" runat="server" BackColor="#66FF66" Font-Bold="True" Font-Size="Medium" Height="51px" Text="SignUp" Width="166px" OnClick="btnSubmit_Click" />
